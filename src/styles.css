@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 244px auto;
+
+    @media (max-width: 600px) {
+        margin: 122px auto;
+    }
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.calculator input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    /* "outline: none; " é para tirar a borda do item quando selecionado */
+    outline: none; 
+}
+
+.calculator .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator .row button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.calculator .row button:hover{
+    background-color: rgb(126, 161, 54);
+}
